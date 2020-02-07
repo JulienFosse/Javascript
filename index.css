@@ -1,0 +1,43 @@
+.images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+}
+
+.images img {
+  width: calc(100% / 3);
+  height: 241px;
+  margin-right: 5px;
+}
+
+.imagebas {
+  padding-top: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 241px;
+  width: 90%;
+}
+
+.imagebas .imgdiv {
+  width: 442px;
+  height: 241px;
+}
+
+.imagebas .imgdiv .imgbas {
+  width: 100%;
+  height: 100%;
+}
+
+.imagebas .imgbas2 {
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=index.css.map */

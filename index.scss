@@ -1,0 +1,32 @@
+.images {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+
+  img {
+    width: calc(100% / 3);
+    height: 241px;
+    margin-right: 5px;
+  }
+}
+
+.imagebas {
+  padding-top: 200px;
+  display: flex;
+  justify-content: space-between;
+  height: 241px;
+  width: 90%;
+
+  .imgdiv {
+    width: 442px;
+    height: 241px;
+    .imgbas {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .imgbas2 {
+    width: 100%;
+    height: 100%;
+  }
+}
