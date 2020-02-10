@@ -1,42 +1,182 @@
-.images {
+/*CHANGER UN MOT EN UN CLIC*/
+body {
+  margin: 0;
+  padding: 0;
+  /*PIERRE FEUILLE CISEAUX*/
+}
+
+body .sectiongeneral {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url("./Images/javascripbackground.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("./Images/javascripbackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  /* CHANGER UNE IMAGE EN UN CLIC*/
+  /* CHOISIR UN NUMERO AU HASARD*/
+}
+
+body .sectiongeneral .section1 {
+  height: 100px;
+}
+
+body .sectiongeneral .section1 h1 {
+  margin: 0 auto 30px auto;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+
+body .sectiongeneral .section1 .div1 {
+  text-align: center;
+}
+
+body .sectiongeneral .section1 .div1 button {
+  background-color: orange;
+  color: white;
+  font-size: 20px;
+  border-style: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+body .sectiongeneral .section2 {
+  height: 390px;
+}
+
+body .sectiongeneral .section2 h1 {
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+
+body .sectiongeneral .section2 .imgsection2 {
+  text-align: center;
+}
+
+body .sectiongeneral .section2 .imgsection2 .imgclic {
+  width: 100%;
+  height: 300px;
+  padding-bottom: 20px;
+}
+
+body .sectiongeneral .section2 .imgsection2 .imgclic img {
+  height: 100%;
+}
+
+body .sectiongeneral .section2 .imgsection2 button {
+  background-color: orange;
+  color: white;
+  font-size: 20px;
+  border-style: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+body .sectiongeneral .section3 {
+  height: 100px;
+}
+
+body .sectiongeneral .section3 h3 {
+  text-align: center;
+  font-size: 30px;
+  margin: 60px auto 40px auto;
+  color: white;
+}
+
+body .sectiongeneral .section3 button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  background-color: orange;
+  color: white;
+  font-size: 20px;
+  border-style: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+body .section4 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.55)), to(rgba(0, 0, 0, 0.55))), url("./Images/background.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("./Images/background.jpg");
+  color: white;
+  height: 100vh;
+}
+
+body .section4 .h1section4 {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 25px;
+}
+
+body .section4 .images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 40px 60px 0px 60px;
+}
+
+body .section4 .images img {
+  width: calc(90% / 3);
+  height: 241px;
+  margin-right: 5px;
+}
+
+body .section4 .imagebas {
+  padding-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  width: 100%;
-}
-
-.images img {
-  width: calc(100% / 3);
   height: 241px;
-  margin-right: 5px;
 }
 
-.imagebas {
-  padding-top: 200px;
+body .section4 .imagebas .resultat {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 241px;
-  width: 90%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  font-size: 40px;
 }
 
-.imagebas .imgdiv {
-  width: 442px;
-  height: 241px;
+body .section4 .imagebas .resultat .resultatmoi {
+  margin: 200px 0 0 50px;
 }
 
-.imagebas .imgdiv .imgbas {
+body .section4 .imagebas .resultat .resultatcomputer {
+  margin: 200px 50px 0px 0px;
+}
+
+body .section4 .imagebas .imgdiv {
+  width: calc(90% / 3);
+}
+
+body .section4 .imagebas .imgdiv h2 {
+  text-align: center;
+}
+
+body .section4 .imagebas .imgdiv .imgbas {
   width: 100%;
   height: 100%;
 }
 
-.imagebas .imgbas2 {
+body .section4 .imagebas .imgbas2 {
   width: 100%;
   height: 100%;
 }

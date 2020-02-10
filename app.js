@@ -45,7 +45,7 @@ button.addEventListener("click", function() {
   getRandomInt();
 });
 
-/////// Changer d'image en bas /////////////////
+/////// PIERRE FEUILLE CISEAUX /////////////////
 
 var image1 = document.querySelector(".image1");
 var image2 = document.querySelector(".image2");
@@ -55,53 +55,62 @@ var imgbas2 = document.querySelector(".imgbas2");
 var h2mychoice = document.querySelector(".h2imgbas");
 var h2choicecomputer = document.querySelector(".h2imgbas2");
 var resultath2 = document.querySelector(".resultath2");
-var h2points = document.querySelector(".h2points");
+var h2pointsmy = document.querySelector(".resultatmoi");
+var h2pointscomputer = document.querySelector(".resultatcomputer");
 
-var source = [
-  "./Images/ciseaux.gif",
-  "./Images/pierre.jpg",
-  "./Images/feuille.jpg"
-];
+var source = ["./Images/feu.jpg", "./Images/eau.jpg", "./Images/plante.jpg"];
 
-var noms = ["ciseaux", "pierre", "feuille"];
+var noms = ["Feu", "Eau", "Plante"];
 
 image1.addEventListener("click", function() {
-  imgbas.setAttribute("src", "./Images/ciseaux.gif");
+  imgbas.setAttribute("src", "./Images/feu.jpg");
   var random = Math.floor(Math.random() * Math.floor(3));
   imgbas2.setAttribute("src", source[random]);
-  mychoice = "ciseaux";
+  mychoice = "Feu";
   console.log(mychoice);
   choicecomputer = noms[random];
   console.log(choicecomputer);
   h2mychoice.textContent = mychoice;
   h2choicecomputer.textContent = choicecomputer;
   resultat();
+  scoref();
+  console.log(score);
+  h2pointsmy.textContent = score;
+  h2pointscomputer.textContent = scorecomputer;
 });
 
 image2.addEventListener("click", function() {
-  imgbas.setAttribute("src", "./Images/pierre.jpg");
+  imgbas.setAttribute("src", "./Images/eau.jpg");
   var random = Math.floor(Math.random() * Math.floor(3));
   imgbas2.setAttribute("src", source[random]);
-  mychoice = "pierre";
+  mychoice = "Eau";
   console.log(mychoice);
   choicecomputer = noms[random];
   console.log(choicecomputer);
   h2mychoice.textContent = mychoice;
   h2choicecomputer.textContent = choicecomputer;
   resultat();
+  scoref();
+  console.log(score);
+  h2pointsmy.textContent = score;
+  h2pointscomputer.textContent = scorecomputer;
 });
 
 image3.addEventListener("click", function() {
-  imgbas.setAttribute("src", "./Images/feuille.jpg");
+  imgbas.setAttribute("src", "./Images/plante.jpg");
   var random = Math.floor(Math.random() * Math.floor(3));
   imgbas2.setAttribute("src", source[random]);
-  mychoice = "feuille";
+  mychoice = "Plante";
   console.log(mychoice);
   choicecomputer = noms[random];
   console.log(choicecomputer);
   h2mychoice.textContent = mychoice;
   h2choicecomputer.textContent = choicecomputer;
   resultat();
+  scoref();
+  console.log(score);
+  h2pointsmy.textContent = score;
+  h2pointscomputer.textContent = scorecomputer;
 });
 
 ///////// changer 2eme image //////////////////////////////////////////
@@ -109,22 +118,33 @@ image3.addEventListener("click", function() {
 var mychoice = "";
 var choicecomputer = "";
 
+var score = 0;
+var scorecomputer = 0;
+
 function resultat() {
   if (mychoice === choicecomputer) {
     resultath2.textContent = "Egalité";
   }
 
-  if (mychoice === "pierre" && choicecomputer === "ciseaux") {
-    resultath2.textContent = "victoire";
-  } else if (mychoice === "ciseaux" && choicecomputer === "feuille") {
-    resultath2.textContent = "victoire";
-  } else if (mychoice === "feuille" && choicecomputer === "pierre") {
-    resultath2.textContent = "victoire";
-  } else if (mychoice === "pierre" && choicecomputer === "feuille") {
+  if (mychoice === "Feu" && choicecomputer === "Eau") {
     resultath2.textContent = "Défaite";
-  } else if (mychoice === "ciseaux" && choicecomputer === "pierre") {
+  } else if (mychoice === "Feu" && choicecomputer === "Plante") {
+    resultath2.textContent = "Victoire";
+  } else if (mychoice === "Eau" && choicecomputer === "Feu") {
+    resultath2.textContent = "Victoire";
+  } else if (mychoice === "Eau" && choicecomputer === "Plante") {
     resultath2.textContent = "Défaite";
-  } else if (mychoice === "feuille" && choicecomputer === "ciseaux") {
+  } else if (mychoice === "Plante" && choicecomputer === "Feu") {
     resultath2.textContent = "Défaite";
+  } else if (mychoice === "Plante" && choicecomputer === "Eau") {
+    resultath2.textContent = "Victoire";
+  }
+}
+
+function scoref() {
+  if (resultath2.textContent === "Victoire") {
+    score++;
+  } else if (resultath2.textContent === "Défaite") {
+    scorecomputer++;
   }
 }
