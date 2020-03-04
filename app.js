@@ -1,49 +1,49 @@
-var button = document.querySelector("button");
-var h1 = document.querySelector("h1");
+// var button = document.querySelector("button");
+// var h1 = document.querySelector("h1");
 
-function changename() {
-  h1.textContent = "Odin";
-  console.log("ok");
-}
+// function changename() {
+//   h1.textContent = "Odin";
+//   console.log("ok");
+// }
 
-button.addEventListener("click", function() {
-  changename();
-});
+// button.addEventListener("click", function() {
+//   changename();
+// });
 
-//// CHANGER D'IMAGE///////////////////////////////////////////
+// //// CHANGER D'IMAGE///////////////////////////////////////////
 
-var button = document.querySelector(".button2");
-var img = document.querySelector("img");
+// var button = document.querySelector(".button2");
+// var img = document.querySelector("img");
 
-function changeimg() {
-  console.log(img.getAttribute("src"));
-  // getAttibute permet de recuperer la valeur d'un attribut
+// function changeimg() {
+//   console.log(img.getAttribute("src"));
+//   // getAttibute permet de recuperer la valeur d'un attribut
 
-  if (img.getAttribute("src") === "./Images/jacouille.jpg") {
-    img.setAttribute("src", "./Images/françois-pignon.jpg");
-  } else {
-    img.setAttribute("src", "./Images/jacouille.jpg");
-  }
-}
+//   if (img.getAttribute("src") === "./Images/jacouille.jpg") {
+//     img.setAttribute("src", "./Images/françois-pignon.jpg");
+//   } else {
+//     img.setAttribute("src", "./Images/jacouille.jpg");
+//   }
+// }
 
-button.addEventListener("click", function() {
-  changeimg();
-});
+// button.addEventListener("click", function() {
+//   changeimg();
+// });
 
-//// Valeur random///////////////////////////////////////////
-//// Creer une function qui renvoie soit 0, 1 ou 2.
+// //// Valeur random///////////////////////////////////////////
+// //// Creer une function qui renvoie soit 0, 1 ou 2.
 
-var button = document.querySelector(".random");
-var h3 = document.querySelector("h3");
+// var button = document.querySelector(".random");
+// var h3 = document.querySelector("h3");
 
-function getRandomInt() {
-  console.log(Math.floor(Math.random() * Math.floor(3)));
-  h3.textContent = Math.floor(Math.random() * Math.floor(3));
-}
+// function getRandomInt() {
+//   console.log(Math.floor(Math.random() * Math.floor(3)));
+//   h3.textContent = Math.floor(Math.random() * Math.floor(3));
+// }
 
-button.addEventListener("click", function() {
-  getRandomInt();
-});
+// button.addEventListener("click", function() {
+//   getRandomInt();
+// });
 
 /////// PIERRE FEUILLE CISEAUX /////////////////
 
